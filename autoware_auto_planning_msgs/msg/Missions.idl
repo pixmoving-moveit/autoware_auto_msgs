@@ -1,0 +1,12 @@
+#include "autoware_auto_planning_msgs/msg/Mission.idl"
+
+module autoware_auto_planning_msgs {
+  module msg {
+    @verbatim (language = "comment", text=
+      "Missions for sweeping functions.")
+    struct Missions {
+      autoware_auto_planning_msgs::msg::Mission current_mission;
+      sequence<autoware_auto_planning_msgs::msg::Mission> all_missions;
+    };
+  };
+};

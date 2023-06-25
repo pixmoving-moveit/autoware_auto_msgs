@@ -1,0 +1,11 @@
+
+module autoware_auto_planning_msgs {
+  module msg {
+    @verbatim (language = "comment", text=
+      "A mission if has achieved.")
+    struct MissionAchieved {
+      int16 mission_order;
+      boolean mission_achieved;
+    };
+  };
+};
