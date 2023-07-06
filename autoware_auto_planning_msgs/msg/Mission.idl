@@ -27,6 +27,7 @@ module autoware_auto_planning_msgs {
       @default (value=8)
       uint8 free_space_sweeping_mode;
       int16 mission_order;
+      geometry_msgs::msg::Pose goal;
     };
   };
 };
