@@ -1,0 +1,24 @@
+#include "autoware_auto_planning_msgs/msg/Trajectory.idl"
+
+module autoware_auto_planning_msgs {
+  module srv {
+    struct GetTrajectory_Request
+    {
+      @verbatim(language = "comment", text =
+        "Goal pose to plan")
+      geometry_msgs::msg::PoseStamped goal_pose;
+      @verbatim(language = "comment", text = 
+        "Reference velocity for trajectory")
+      std_msgs::msg::Float32 reference_velocity;
+    };
+    struct GetTrajectory_Response
+    {
+      @verbatim(language = "comment", text =
+        "Planned trajectory")
+      autoware_auto_planning_msgs::msg::Trajectory trajectory;
+      @verbatim(language = "comment", text =
+        "partial index for planned trajectory") 
+      std_msgs::msg::Int16MultiArray partial_index;
+    };
+  };
+};
