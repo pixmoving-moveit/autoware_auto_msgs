@@ -1,0 +1,13 @@
+#include "autoware_auto_planning_msgs/msg/Trajectory.idl"
+#include "std_msgs/msg/Int16MultiArray.idl"
+module autoware_auto_planning_msgs {
+  module msg {
+    @verbatim (language = "comment", text=
+      "PlannerResult for freespace_planner_preprocessor.")
+    struct PlannerResult {
+      autoware_auto_planning_msgs::msg::Trajectory planner_trajectory;
+      std_msgs::msg::Int16MultiArray planner_result;
+    };
+  };
+};
+

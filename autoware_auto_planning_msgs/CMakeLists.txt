@@ -25,6 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Mission.idl"
   "msg/Missions.idl"
   "msg/MissionAchieved.idl"
+  "msg/PlannerResult.idl"
   "srv/ModifyTrajectory.idl"
   "srv/GetTrajectory.idl"
   DEPENDENCIES
